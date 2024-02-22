@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { Project } from '../models/project';
+import { Tag } from '../models/tag';
 import { ProjectCardComponent } from "../project-card/project-card.component";
 
 @Component({
@@ -18,7 +19,7 @@ export class PortfolioComponent {
     summary: 'Angular based personal portfolio',
     description: '',
     projectLink: '',
-    tags: ['Angular', 'TypeScript', 'Bootstrap', 'GitHub Pages'],
+    tags: [Tag.ANGULAR, Tag.TYPESCRIPT],
     pictures: []
   };
 
