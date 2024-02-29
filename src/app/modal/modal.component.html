@@ -2,7 +2,7 @@
 </div>
 <div id="container">
   <div id="header">
-    {{proj_details.name}}
+    {{proj_details.name}} <i class="fa fa-times" (click)="closeModal()" style="cursor: pointer; margin-left: auto; margin-right: 5%"></i>
   </div>
   <div>
     <img src={{proj_details.iconLink}} alt="profile picture" width="30%" height="30%" style="display:flex; margin-left: auto; margin-right: auto;">
@@ -12,6 +12,6 @@
   </div>
   <a class="icon-link" target="_blank" href={{proj_details.projectLink}}><i class="fab fa-2x fa-github"></i></a>
   <div id="actions">
-    <button class="cancel" (click)="closeModal()">Close</button>
+    <!--<button class="cancel" (click)="closeModal()">Close</button>-->
   </div>
 </div>
